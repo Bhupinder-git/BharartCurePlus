@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/", // Set this to your GitHub repository name if deploying to GitHub Pages subfolder
+  base: "/BharartCurePlus/", // GitHub Pages subfolder deployment
   build: {
     outDir: "dist",
     assetsDir: "assets",
