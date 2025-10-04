@@ -8,6 +8,9 @@ import {
   Linkedin,
   Video,
 } from "lucide-react";
+import ReliableBadge from "../assets/TrustBadges/reliable.png";
+import SecureBadge from "../assets/TrustBadges/secure.png";
+import AffordableBadge from "../assets/TrustBadges/affordable.png";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -246,11 +249,7 @@ const Footer = () => {
           <div className="flex gap-4">
             <div className="flex-shrink-0">
               <div className="w-16 h-16 bg-red-50 rounded-lg flex items-center justify-center">
-                <img
-                  src="/src/assets/TrustBadges/reliable.png"
-                  alt="Reliable"
-                  className="w-10 h-10"
-                />
+                <img src={ReliableBadge} alt="Reliable" className="w-10 h-10" />
               </div>
             </div>
             <div>
@@ -267,11 +266,7 @@ const Footer = () => {
           <div className="flex gap-4">
             <div className="flex-shrink-0">
               <div className="w-16 h-16 bg-red-50 rounded-lg flex items-center justify-center">
-                <img
-                  src="/src/assets/TrustBadges/secure.png"
-                  alt="Secure"
-                  className="w-10 h-10"
-                />
+                <img src={SecureBadge} alt="Secure" className="w-10 h-10" />
               </div>
             </div>
             <div>
@@ -288,7 +283,7 @@ const Footer = () => {
             <div className="flex-shrink-0">
               <div className="w-16 h-16 bg-red-50 rounded-lg flex items-center justify-center">
                 <img
-                  src="/src/assets/TrustBadges/affordable.png"
+                  src={AffordableBadge}
                   alt="Affordable"
                   className="w-10 h-10"
                 />

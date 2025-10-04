@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import HeroBackground from "../assets/HeroSectionBackgound.jpg";
 
 export default function HeroSection() {
   const [typewriterText, setTypewriterText] = useState("");
@@ -43,7 +44,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('/src/assets/HeroSectionBackgound.jpg')`,
+          backgroundImage: `url(${HeroBackground})`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-orange-400/55 via-orange-300/45 to-transparent bg-[length:50%_100%] bg-left bg-no-repeat"></div>

@@ -1,5 +1,8 @@
 import React from "react";
 import { Star, User } from "lucide-react";
+import Patient1 from "../assets/PatientPics/Patient1.jpeg";
+import Patient2 from "../assets/PatientPics/Patient2.jpeg";
+import Patient3 from "../assets/PatientPics/Patient3.jpeg";
 
 export default function PatientStories() {
   const reviews = [
@@ -8,7 +11,7 @@ export default function PatientStories() {
       text: "Bharat Cure+ saved my life during a critical medical emergency.",
       name: "Bhawya Kumar",
       role: "Patient, Ludhiana",
-      avatar: "/src/assets/PatientPics/Patient1.jpeg",
+      avatar: Patient1,
       rating: 4,
     },
     {
@@ -16,7 +19,7 @@ export default function PatientStories() {
       text: "The AI chatbot provided instant guidance when I needed help most.",
       name: "Nadia Ansari",
       role: "Caregiver, J&K",
-      avatar: "/src/assets/PatientPics/Patient2.jpeg",
+      avatar: Patient2,
       rating: 4.5,
     },
     {
@@ -24,7 +27,7 @@ export default function PatientStories() {
       text: "Transparent cost comparisons helped me make the right medical choice.",
       name: "Priya Sharma",
       role: "Patient, Delhi",
-      avatar: "/src/assets/PatientPics/Patient3.jpeg",
+      avatar: Patient3,
       rating: 3.5,
     },
   ];

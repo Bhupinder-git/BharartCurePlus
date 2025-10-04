@@ -5,18 +5,21 @@ A comprehensive healthcare and wellness platform built with React, featuring phy
 ## 🌟 Features
 
 ### 🏥 Healthcare Services
+
 - **Hospital Comparison** - Compare hospitals and services
 - **Live Resource Tracker** - Real-time bed and ventilator tracking
 - **blood Urgent Alerts** - Blood donation and request system
 - **AI Chatbot Assistant** - 24/7 AI-powered medical guidance
 
 ### 💪 Wellness Hub
+
 - **Physical Exercises** - 6 different workout routines with built-in timers
 - **Mental Health Hacks** - 6 wellness practices for mental wellbeing
 - **Progress Tracking** - Complete with statistics and completion rates
 - **Interactive Timers** - Start, pause, reset functionality
 
 ### 🛒 Healthcare Store
+
 - **Medical Equipment** - Blood pressure monitors, thermometers, pulse oximeters
 - **Medicines & Supplements** - Vitamins, fish oil, multivitamins
 - **Shopping Cart** - Full e-commerce functionality
@@ -34,17 +37,20 @@ A comprehensive healthcare and wellness platform built with React, featuring phy
 ## 📦 Installation & Setup
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/daily-wellness-hub.git
    cd daily-wellness-hub
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -68,6 +74,7 @@ A comprehensive healthcare and wellness platform built with React, featuring phy
 - `/skincare-routine-planner` - Skincare planning tool
 
 ## 🎨 Design & Theme
+
 - **Consistent Orange/Red/Yellow Theme** throughout the application
 - **Responsive Design** - Works on all device sizes
 - **Smooth Animations** - Lenis smooth scrolling and custom animations
