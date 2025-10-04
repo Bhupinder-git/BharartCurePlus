@@ -1,0 +1,210 @@
+@import "tailwindcss";
+
+/* Hide scrollbar for webkit browsers (Chrome, Safari, Edge) - but not for chatbot */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for all browsers - but not for chatbot */
+html {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Ensure smooth scrolling is maintained */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Show scrollbar specifically for chatbot message area */
+.chatbot-messages::-webkit-scrollbar {
+  display: block;
+  width: 6px;
+}
+
+.chatbot-messages::-webkit-scrollbar-track {
+  background: rgba(75, 85, 99, 0.1);
+  border-radius: 3px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+  background: rgba(249, 115, 22, 0.5);
+  border-radius: 3px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb:hover {
+  background: rgba(249, 115, 22, 0.7);
+}
+
+.chatbot-messages {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(249, 115, 22, 0.5) rgba(75, 85, 99, 0.1);
+  /* Enable smooth scrolling */
+  scroll-behavior: smooth;
+  /* Optimize for touch devices */
+  -webkit-overflow-scrolling: touch;
+  /* Enable two-finger scrolling on trackpads */
+  touch-action: pan-y;
+  /* Ensure proper scroll momentum on iOS */
+  -webkit-scroll-behavior: smooth;
+}
+
+/* Ensure chatbot container allows touch scrolling */
+.chatbot-container {
+  /* Allow vertical panning/scrolling */
+  touch-action: pan-y;
+  /* Prevent zoom on double tap while allowing scroll */
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /* Isolate scrolling to this container */
+  overscroll-behavior: contain;
+  /* Prevent scroll chaining */
+  overscroll-behavior-y: contain;
+}
+
+/* Enable momentum scrolling on mobile devices */
+@supports (-webkit-overflow-scrolling: touch) {
+  .chatbot-messages {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Bed modal scroll styling - similar to chatbot but with hospital theme */
+.bed-modal-scroll {
+  /* Enable smooth scrolling */
+  scroll-behavior: smooth;
+  /* Optimize for touch devices */
+  -webkit-overflow-scrolling: touch;
+  /* Enable two-finger scrolling on trackpads */
+  touch-action: pan-y;
+  /* Ensure proper scroll momentum on iOS */
+  -webkit-scroll-behavior: smooth;
+  /* Isolate scrolling to this container */
+  overscroll-behavior: contain;
+  /* Prevent scroll chaining */
+  overscroll-behavior-y: contain;
+}
+
+/* Custom scrollbar for bed modal */
+.bed-modal-scroll::-webkit-scrollbar {
+  display: block;
+  width: 8px;
+}
+
+.bed-modal-scroll::-webkit-scrollbar-track {
+  background: rgba(229, 231, 235, 0.3);
+  border-radius: 4px;
+}
+
+.bed-modal-scroll::-webkit-scrollbar-thumb {
+  background: rgba(249, 115, 22, 0.6);
+  border-radius: 4px;
+}
+
+.bed-modal-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(249, 115, 22, 0.8);
+}
+
+.bed-modal-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(249, 115, 22, 0.6) rgba(229, 231, 235, 0.3);
+}
+
+/* White running border animation for hero stats boxes */
+@keyframes border-run {
+  0% {
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  12.5% {
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    transform: scaleY(1);
+  }
+  25% {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  37.5% {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    transform: scaleX(1);
+  }
+  50% {
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 4px;
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  62.5% {
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 4px;
+    height: 100%;
+    transform: scaleY(1);
+  }
+  75% {
+    bottom: 0;
+    top: auto;
+    right: 0;
+    width: 0;
+    height: 4px;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  87.5% {
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: auto;
+    width: 100%;
+    height: 4px;
+    transform: scaleX(1);
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+}
+
+.animate-border-run-1 {
+  animation: border-run 3s linear infinite;
+}
+
+.animate-border-run-2 {
+  animation: border-run 3s linear infinite;
+  animation-delay: -1s;
+}
+
+.animate-border-run-3 {
+  animation: border-run 3s linear infinite;
+  animation-delay: -2s;
+}
